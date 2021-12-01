@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoinWatch.Views.DetailPage">
+    <ContentPage.Content>
+        <Grid BackgroundColor="#1F2F3F" Padding="8">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="5*"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="lblTickerName" Text="(TickerName)" Grid.Row="1" FontSize="Large" TextColor="White" Grid.ColumnSpan="3" FontAttributes="Bold" HorizontalOptions="End"/>
+            <Label Text="Ticker" Grid.Row="1" HorizontalOptions="Start" FontSize="Large" TextColor="DarkGray" Grid.ColumnSpan="2" />
+
+            <Label x:Name="lblKrakenName" Text="(KrakenName)" Grid.Row="2" FontSize="Large" TextColor="White" Grid.ColumnSpan="3" FontAttributes="Bold" HorizontalOptions="End"/>
+            <Label Text="Ticker on KRAKEN" Grid.Row="2" HorizontalOptions="Start" FontSize="Large" TextColor="DarkGray" Grid.ColumnSpan="2" />
+
+            <Label x:Name="lblStrPrice" Text="(StrPrice)" Grid.Row="4" FontSize="Large" TextColor="White" Grid.ColumnSpan="3" FontAttributes="Bold" HorizontalOptions="End"/>
+            <Label Text="Price" Grid.Row="4" HorizontalOptions="Start" FontSize="Large" TextColor="DarkGray" Grid.ColumnSpan="2" />
+
+            <Label x:Name="lblStrVolume" Text="(StrVolume)" Grid.Row="5" FontSize="Large" TextColor="White" Grid.ColumnSpan="3" FontAttributes="Bold" HorizontalOptions="End"/>
+            <Label Text="Volume" Grid.Row="5" HorizontalOptions="Start" FontSize="Large" TextColor="DarkGray" Grid.ColumnSpan="2" />
+
+            <Label x:Name="lblOpening" Text="(Opening)" Grid.Row="6" FontSize="Large" TextColor="White" Grid.ColumnSpan="3" FontAttributes="Bold" HorizontalOptions="End"/>
+            <Label Text="Opening price" Grid.Row="6" HorizontalOptions="Start" FontSize="Large" TextColor="DarkGray" Grid.ColumnSpan="2" />
+
+            <Label x:Name="lblChange_percentage" Text="(Change_percentage)" Grid.Row="7" FontSize="Large" TextColor="White" Grid.ColumnSpan="3" FontAttributes="Bold" HorizontalOptions="End"/>
+            <Label Text="% change" Grid.Row="7" HorizontalOptions="Start" FontSize="Large" TextColor="DarkGray" Grid.ColumnSpan="2" />
+
+            <Label x:Name="lblLeverage" Text="(Leverage)" Grid.Row="8" FontSize="Large" TextColor="White" Grid.ColumnSpan="3" FontAttributes="Bold" HorizontalOptions="End"/>
+            <Label Text="Leverage amount" Grid.Row="8" HorizontalOptions="Start" FontSize="Large" TextColor="DarkGray" Grid.ColumnSpan="2" />
+
+            <Label x:Name="lblMinOrder" Text="(MinOrder)" Grid.Row="9" FontSize="Large" TextColor="White" Grid.ColumnSpan="3" FontAttributes="Bold" HorizontalOptions="End"/>
+            <Label Text="Minimum order size" Grid.Row="9" HorizontalOptions="Start" FontSize="Large" TextColor="DarkGray" Grid.ColumnSpan="2" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
